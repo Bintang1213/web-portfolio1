@@ -1,0 +1,34 @@
+/** @type {import('tailwindcss').Config} */
+const tailwindConfig = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        lightHover: '#fcf4ff',
+        darkhover: '#2a004a',
+        darkTheme: '#11001F',
+        accent: '#f97316',
+        primary: '#1e40af', 
+      },
+      fontFamily: {
+        Outfit: ["Outfit", "sans-serif"],
+        Ovo: ["Ovo", "sans-serif"]
+      }, 
+      boxShadow: {
+        'black' : '4px 4px 0 #000',
+        'white' : '4px 4px 0 #fff',
+      },
+      gridTemplateColumns: {
+        'auto' : 'repeat(autofit-fit, minmax(200px, 1fr))'
+      }
+    },
+  },
+  darkMode: 'selector',
+  plugins: [],
+};
+
+export default tailwindConfig;
